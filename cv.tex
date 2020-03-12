@@ -1,0 +1,237 @@
+\documentclass{simplecv}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{url}
+
+\usepackage{multibib}
+\newcites{conferences}{{Papers in refereed conferences}}
+\newcites{journals}{{Journals}}
+
+\begin{document}
+
+\leftheader{
+\textbf{ariel@vanguardiasur.com.ar}\\
+\small{\url{http://github.com/adalessandro}}\\
+\small{\url{http://linkedin.com/in/ariel-dalessandro}}\\
+}
+
+\rightheader{
+1160 Mitre Street \#3A\\
+S2000 Rosario (Argentina)\\
++54~9~(0341)~2616~873
+}
+
+\title{Ariel D'Alessandro}
+
+\maketitle
+
+Working as Software Developer since 2011, involved in many different projects
+professionally, dedicated to Open Source since 2014. Got a Computer Science
+degree in 2017, with a degree thesis on SLAM system.
+
+\section{Professional Experience}
+
+\begin{topic}
+
+% Job entry
+\item [Sep 2016 - Sep 2019] \emph{Software Engineer} -
+MotionFigures, LLC (\url{http://www.motionfigures.com/})
+
+Robotic startup company. During this project, worked as one of the first
+employees, in charge of the entire software stack. Tasks included on-site work
+to bring-up the initial prototype and debug hardware issues.
+
+\begin{itemize}
+
+\item BSP using Buildroot, U-boot and Linux Kernel for a custom Sunxi AllWinner
+A20 board.
+\begin{itemize}
+\item Developed custom UART driver and 1-wire half-duplex protocol design to
+discover, communicate and drive servo endpoints.
+\item IMU BNO055 IIO driver rework for quaternion estimation using sensor fusion
+in user-space app.
+\item Worked on audio codec drivers to support Sunxi A20 SoC and meet product
+requirements.
+\item \textbf{Technologies}: ARM, Sunxi Allwinner A20, UART, 1-wire, IMU BNO055
+IIO, sound subsystem, Linux Kernel, U-boot, Buildroot, C, Bash.
+\end{itemize}
+
+\item Worked on core user-space app using Node JS.
+\begin{itemize}
+\item Developed Node JS addons in C++ for low-level hardware communication with
+custom UART buses and IMU.
+\item Research and implementation of 3D geometry models for robotic motion,
+including inverse kinematic solvers and IMU sensor fusion algorithms.
+\item Developed JS based apps using graphics library three.js and d3. Added
+physics simulation using DART and pybullet engines.
+\item \textbf{Technologies}: Robotic motion, inverse kinematics, IMU sensor
+fusion, physics engines, DART, pybullet, C++, Node JS, three.js, d3.js.
+\end{itemize}
+
+\item Programmed several MCUs using the following libraries/frameworks: STM8
+cosmic, STM32 libopencm3, unicore-mx
+(\href{https://github.com/insane-adding-machines/unicore-mx-examples/commits?author=adalessandro}{contributions}),
+ESP32 esp-idf.
+\begin{itemize}
+\item Implemented custom UART and 1-wire half-duplex protocol.
+\item PID controllers for servo motor driving.
+\item Fixed-point arithmetic support for non-FPU MCUs.
+\item Ported the entire 3D geometry models for robotic motion to STM32 board.
+\item \textbf{Technologies}: C, STMicroelectronics STM8 cosmic, STM32
+libopencm3, STM32 unicore-mx; Espressif ESP32 esp-idf; UART, 1-wire, PID
+controller, embedded robotic motion.
+\end{itemize}
+
+\item Research on machine learning techniques applied to robotic motion.
+\begin{itemize}
+\item Implemented reinforcement learning model using OpenAI gym/roboschool
+projects.
+\item \textbf{Technologies}: Machine learning, reinforcement learning, OpenAI,
+Python.
+\end{itemize}
+
+\end{itemize}
+
+% Job entry
+\item [July 2015 - June 2017] \emph{Software Engineer} -
+VanguardiaSur (\url{http://www.vanguardiasur.com.ar/})
+
+Company providing Embedded Linux and Linux Kernel consulting services to
+customers all over the world.
+
+\begin{itemize}
+
+\item Project June 2015 - Feb 2016
+\begin{itemize}
+\item Developed kernel drivers for NXP LPC18xx/43xx, accepted upstream
+(\href{https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/?qt=author&q=Ariel+D.*Alessandro}{contributions}),
+\item \textbf{Technologies}: ARM, NXP LPC18xx/43xx, Linux Kernel, C, Git.
+\end{itemize}
+
+\item Project: July 2015 - Feb 2016
+\begin{itemize}
+\item Worked on two different products from client, based on Sunxi Allwinner A20
+and Rockchip RK3288 SoCs. Tasks included adding BSP support and customization
+using Buildroot and OpenWRT, along with U-boot and Linux kernel.
+\item \textbf{Technologies}: ARM, Sunxi Allwinner A20, Rockchip RK3288, Linux
+Kernel, U-boot, Buildroot, OpenWRT, C, Bash.
+\end{itemize}
+
+\item Project: Aug 2015 - Oct 2015
+\begin{itemize}
+\item Worked on a startup project using a Renesas RZ/A1L custom board.
+\item Prepared BSP using Buildroot, U-boot and Linux kernel to meet client
+requirements, with special emphasis on low memory footprint. Developed IMU
+MPU9250 user-space library.
+\item \textbf{Technologies}: ARM, Renesas RZ/A1L, IMU MPU9250, Linux Kernel,
+U-boot, Buildroot, C, Bash.
+\end{itemize}
+
+\item Project: Nov 2015 - June 2017
+\begin{itemize}
+\item Mantained a BSP (Buildroot + U-boot + Linux kernel) for a product based on
+Texas Instruments AM335x. Worked on the user-space side developing several
+tools.
+\item \textbf{Technologies}: ARM, Texas Instruments AM335x, Linux Kernel,
+U-boot, Buildroot, C, C++, Bash, Qt.
+\end{itemize}
+
+\end{itemize}
+
+% Job entry
+\item [Oct 2012 - June 2015] \emph{Software Developer} -
+Ministry of Health of Santa Fe (\url{http://www.santafe.gob.ar/})
+
+Developed and maintained systems for health public administration using
+Microsoft Visual Basic, Python/Django and PHP/Symfony2.
+
+\textbf{Technologies}: Bash, Visual Basic, Python, PHP, JS, SQL, SVN.
+
+% Job entry
+\item [April 2011 - Oct 2011] \emph{Software Developer} -
+Elepe Servicios (\url{http://www.elepeservicios.com.ar/})
+
+Developed and maintained systems for business administration using Genexus Ev.1
+(Web) and AllFusion Plex.
+
+\textbf{Technologies}: Genexus, AllFusion Plex, SQL, SVN.
+
+\end{topic}
+
+\section{Computer Science Degree}
+
+\begin{topic}
+
+\item [2008 - 2017] \emph{Computer Science Degree} - National University of
+Rosario (\url{http://www.unr.edu.ar/}) - GPA: 9.00
+
+\item [Dec 2017] \emph{Computer Science Degree Thesis} - CIFASIS
+(\url{http://www.cifasis-conicet.gov.ar/})
+
+\textbf{Title}: \emph{Real-time dense mapping for Stereo Visual SLAM systems}
+
+\textbf{Supervisors}: \emph{Taihú Pire} and \emph{Rodrigo Baravalle}
+
+\textbf{Abstract}:
+A robot should be able to estimate an accurate and dense 3D model of its
+environment (a map), along with its pose relative to it, in order to be able to
+navigate autonomously without collisions.
+As the robot moves from its starting position and the estimated map grows, the
+computational and memory footprint of a dense 3D map increases and might exceed
+the robot capabilities in a short time.
+However, a global map is still needed to maintain its consistency and plan for
+distant goals, possibly out of the robot field of view.
+In this work, we address such problem by proposing a
+\emph{real-time stereo mapping} pipeline, feasible for standard CPUs, which is
+locally dense and globally sparse and accurate.
+Our algorithm is based on a graph relating poses and salient visual points, in
+order to maintain a long-term accuracy with a small cost.
+Within such framework, we propose an efficient dense fusion of several stereo
+depths in the locality of the current robot pose.
+Code released as a \href{http://www.ros.org}{ROS} package under GPLv3 license:
+\href{http://www.github.com/CIFASIS/dense-sptam}{Dense S-PTAM}.
+
+\end{topic}
+
+\section{Publications}
+
+\bibliographystyleconferences{plain}
+\nociteconferences{hacia-una-densificacion}
+\bibliographyconferences{conferences}
+
+\bibliographystylejournals{plain}
+\nocitejournals{real-time-dense}
+\bibliographyjournals{journals}
+
+\section{Teaching/Courses}
+
+\begin{topic}
+
+\item [Apr 2016 - July 2016] \emph{Teacher Assistant} -
+National University of Rosario - Engineering, Programming
+
+\textbf{Topics}: C, Fortran, Pascal. Basic Data Structures. Operating system
+concepts.
+
+\item [Aug 2015] \emph{Workshop: Booting Linux on a CIAA NXP}
+
+SASE 2015 (Simposio Argentino de Sistemas embebidos)
+\url{http://www.sase.com.ar/} - National University of Buenos Aires
+
+Introducing CIAA NXP board bring-up (and beyond) using Linux, U-boot and
+Buildroot.
+
+\end{topic}
+
+\section{Languages}
+
+\begin{itemize}
+
+\item \textbf{Spanish}: Native - Mother tongue.
+
+\item \textbf{English}: Advanced - Fluent, written and spoken.
+
+\end{itemize}
+
+\end{document}
